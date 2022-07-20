@@ -1,11 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: "Check PR for specific strings and comment on the PR if found"
+description: "Checks the body of a pull request for given strings. Will leave a comment if any of them are found so the reviewer knows to focus on them."
+author: "Josh Foschi"
+branding:
+  icon: "git-pull-request"
+  color: "gray-dark"
 inputs:
-  milliseconds: # change this
+  searchTerms:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: "strings to search for. Github actions do not accept lists, to search multiple strings please seperate with commas."
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
