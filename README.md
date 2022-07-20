@@ -16,6 +16,7 @@ Details to come
 
 The input is comma seperated as github actions do not currently take anything other than booleans, strings, and numbers.
 Ideally it would be a list of strings, so please treat it as such.
+
 ex: "search term 1, search term 2, search term 3, searchTerm4" will be turned into: ["search term 1", "search term 2", "search term 3", "searchTerm4"]
 
 Input strings are currently case insensitive, so bear that in mind.
