@@ -12,7 +12,7 @@ This github action scans the diff of a PR for places where you are adding given 
 
 Details to come
 
-### Configuration and usage
+## Configuration and usage
 
 The input is comma seperated as github actions do not currently take anything other than booleans, strings, and numbers.
 Ideally it would be a list of strings, so please treat it as such.
